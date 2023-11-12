@@ -4,15 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView_app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/textView_app_title_top_constraint"
+        android:fontFamily="sans-serif"
+        android:text="@string/textView_app_title_text"
+        android:textAlignment="center"
+        android:textColor="@color/textView_app_title_textColor"
+        android:textSize="@dimen/textView_app_title_textSize"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/textView_suggestion_left_constraint"
+        android:layout_marginTop="@dimen/textView_suggestion_top_constraint"
+        android:text="@string/textView_suggestion_text"
+        android:textColor="@color/textView_suggestion_textColor"
+        android:textSize="@dimen/textView_suggestion_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_app_title" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_user_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/radioGroup_user_choice_left_constraint"
+        android:layout_marginTop="@dimen/radioGroup_user_choice_top_constraint"
+        android:checkedButton="@id/radioButton_fahrenheit"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_suggestion">
+
+        <RadioButton
+            android:id="@+id/radioButton_fahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_fahrenheit_text"
+            android:textColor="@color/radioGroup_user_choice_elements_textColor"
+            android:textSize="@dimen/radioGroup_user_choice_elements_textSize" />
+
+        <RadioButton
+            android:id="@+id/radioButton_kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_kelvin_text"
+            android:textColor="@color/radioGroup_user_choice_elements_textColor"
+            android:textSize="@dimen/radioGroup_user_choice_elements_textSize" />
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tableLayout_text_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_evaluate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_user_choice">
+
+        <TableRow
+            android:id="@+id/tableRow_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_user_input"
+                android:layout_width="@dimen/editText_user_input_width"
+                android:layout_height="@dimen/tableLayout_text_fields_rows_elements_height"
+                android:background="@color/editText_user_input_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/editText_user_input_hint"
+                android:autofillHints="@string/editText_user_input_hint"
+                android:inputType="number"
+                android:paddingStart="@dimen/editText_user_input_paddingStart"
+                android:paddingEnd="@dimen/editText_user_input_paddingEnd"
+                android:textColor="@color/editText_user_input_textColor"
+                android:textSize="@dimen/editText_user_input_textSize" />
+
+            <TextView
+                android:id="@+id/textView_input_units"
+                android:layout_width="@dimen/textView_input_units_width"
+                android:layout_height="@dimen/tableLayout_text_fields_rows_elements_height"
+                android:layout_marginStart="@dimen/textView_input_units_layout_marginStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/textView_input_units_text"
+                android:textAlignment="gravity"
+                android:textColor="@color/textView_input_units_textColor"
+                android:textSize="@dimen/textView_input_units_textSize"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tableRow_output_layout_marginTop">
+
+            <TextView
+                android:id="@+id/textView_output"
+                android:layout_width="@dimen/textView_output_width"
+                android:layout_height="@dimen/tableLayout_text_fields_rows_elements_height"
+                android:background="@color/textView_output_background"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/textView_output_layout_paddingStart"
+                android:paddingEnd="@dimen/textView_output_layout_paddingEnd"
+                android:textColor="@color/textView_output_textColor"
+                android:textSize="@dimen/textView_output_textSize" />
+
+            <TextView
+                android:id="@+id/textView_output_units"
+                android:layout_width="@dimen/textView_output_units_width"
+                android:layout_height="@dimen/tableLayout_text_fields_rows_elements_height"
+                android:layout_marginStart="@dimen/textView_output_units_layout_marginStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/textView_output_units_if_fahrenheit_text"
+                android:textAlignment="gravity"
+                android:textColor="@color/textView_output_units_textColor"
+                android:textSize="@dimen/textView_output_units_textSize"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_evaluate"
+        android:layout_width="@dimen/button_evaluate_width"
+        android:layout_height="@dimen/button_evaluate_height"
+        android:layout_marginBottom="@dimen/button_evaluate_bottom_constraint"
+        android:backgroundTint="@color/button_evaluate_backgroundTint"
+        android:text="@string/button_evaluate_text"
+        android:textColor="@color/button_evaluate_textColor"
+        android:textSize="@dimen/button_evaluate_textSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

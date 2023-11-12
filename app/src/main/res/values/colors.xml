@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="bg_color">#B3E5FC</color>
+
+    <color name="textView_app_title_textColor">#303030</color>
+
+    <color name="textView_suggestion_textColor">#303030</color>
+
+    <color name="radioGroup_user_choice_elements_textColor">#303030</color>
+
+    <color name="editText_user_input_textColor">#303030</color>
+    <color name="editText_user_input_background">#FFFFFF</color>
+
+    <color name="textView_input_units_textColor">#303030</color>
+
+    <color name="textView_output_textColor">#303030</color>
+    <color name="textView_output_background">#FFFFFF</color>
+
+    <color name="textView_output_units_textColor">#303030</color>
+
+    <color name="button_evaluate_textColor">#FFFFFF</color>
+    <color name="button_evaluate_backgroundTint">#29B6F6</color>
 </resources>

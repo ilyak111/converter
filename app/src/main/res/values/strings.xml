@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Converter</string>
+
+    <string name="textView_app_title_text">Конвертер температуры</string>
+
+    <string name="textView_suggestion_text">Перевести градусы Цельсия в:</string>
+
+    <string name="radioButton_fahrenheit_text">градусы Фаренгейта</string>
+
+    <string name="radioButton_kelvin_text">Кельвины</string>
+
+    <string name="editText_user_input_hint">Введите значение…</string>
+
+    <string name="textView_input_units_text">°C</string>
+
+    <string name="textView_output_units_if_fahrenheit_text">°F</string>
+    <string name="textView_output_units_if_kelvin_text">K</string>
+
+    <string name="button_evaluate_text">Посчитать</string>
 </resources>

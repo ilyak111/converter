@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="textView_app_title_top_constraint">50dp</dimen>
+    <dimen name="textView_app_title_textSize">50sp</dimen>
+
+    <dimen name="textView_suggestion_top_constraint">50dp</dimen>
+    <dimen name="textView_suggestion_left_constraint">40dp</dimen>
+    <dimen name="textView_suggestion_textSize">22sp</dimen>
+
+    <dimen name="radioGroup_user_choice_top_constraint">0dp</dimen>
+    <dimen name="radioGroup_user_choice_left_constraint">40dp</dimen>
+
+    <dimen name="radioGroup_user_choice_elements_textSize">22sp</dimen>
+
+    <dimen name="tableLayout_text_fields_rows_elements_height">70dp</dimen>
+
+    <dimen name="editText_user_input_width">280dp</dimen>
+    <dimen name="editText_user_input_textSize">22sp</dimen>
+    <dimen name="editText_user_input_paddingStart">10dp</dimen>
+    <dimen name="editText_user_input_paddingEnd">10dp</dimen>
+
+    <dimen name="textView_input_units_width">30dp</dimen>
+    <dimen name="textView_input_units_textSize">22sp</dimen>
+    <dimen name="textView_input_units_layout_marginStart">5dp</dimen>
+
+    <dimen name="tableRow_output_layout_marginTop">20dp</dimen>
+
+    <dimen name="textView_output_width">280dp</dimen>
+    <dimen name="textView_output_textSize">22sp</dimen>
+    <dimen name="textView_output_layout_paddingStart">10dp</dimen>
+    <dimen name="textView_output_layout_paddingEnd">10dp</dimen>
+
+    <dimen name="textView_output_units_width">30dp</dimen>
+    <dimen name="textView_output_units_textSize">22sp</dimen>
+    <dimen name="textView_output_units_layout_marginStart">5dp</dimen>
+
+    <dimen name="button_evaluate_bottom_constraint">120dp</dimen>
+    <dimen name="button_evaluate_width">280dp</dimen>
+    <dimen name="button_evaluate_height">70dp</dimen>
+    <dimen name="button_evaluate_textSize">20sp</dimen>
+</resources>
