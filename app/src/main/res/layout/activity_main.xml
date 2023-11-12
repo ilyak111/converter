@@ -84,11 +84,11 @@
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:hint="@string/editText_user_input_hint"
-                android:autofillHints="@string/editText_user_input_hint"
-                android:inputType="number"
+                android:inputType="number|numberDecimal|numberSigned"
                 android:paddingStart="@dimen/editText_user_input_paddingStart"
                 android:paddingEnd="@dimen/editText_user_input_paddingEnd"
                 android:textColor="@color/editText_user_input_textColor"
+                android:textColorHint="@color/editText_user_input_textColor"
                 android:textSize="@dimen/editText_user_input_textSize" />
 
             <TextView

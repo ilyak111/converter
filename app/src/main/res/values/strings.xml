@@ -16,5 +16,5 @@
     <string name="textView_output_units_if_fahrenheit_text">°F</string>
     <string name="textView_output_units_if_kelvin_text">K</string>
 
-    <string name="button_evaluate_text">Посчитать</string>
+    <string name="button_evaluate_text">Конвертировать</string>
 </resources>

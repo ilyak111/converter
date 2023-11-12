@@ -3,6 +3,8 @@
     <style name="Base.Theme.Converter" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor"> @color/status_bar_color </item>
+        <item name="android:navigationBarColor"> @color/navigation_bar_color </item>
     </style>
 
     <style name="Theme.Converter" parent="Base.Theme.Converter" />
