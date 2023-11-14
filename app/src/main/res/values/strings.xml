@@ -13,6 +13,8 @@
 
     <string name="textView_input_units_text">°C</string>
 
+    <string name="textView_output_if_low_text">Температура ниже абсолютного нуля</string>
+
     <string name="textView_output_units_if_fahrenheit_text">°F</string>
     <string name="textView_output_units_if_kelvin_text">K</string>
 
