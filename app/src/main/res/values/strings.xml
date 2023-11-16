@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Converter</string>
+    <string name="app_name">Конвертер</string>
 
     <string name="textView_app_title_text">Конвертер температуры</string>
 
